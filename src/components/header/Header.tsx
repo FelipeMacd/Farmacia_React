@@ -1,12 +1,12 @@
-import NavBar from '../navBar/NavBar'
+import { NavBar } from "../navBar/NavBar";
+import logo from '../../assets/logo.svg'
 
-function Header() {
+
+export function Header() {
   return (
-    <header>
-        header
-        <NavBar/>
+    <header className="max-w-7xl flex items-center justify-between p-4 mx-auto">
+      <img className="w-44" src={logo} alt="logo" />
+      <NavBar />
     </header>
   )
 }
-
-export default Header
